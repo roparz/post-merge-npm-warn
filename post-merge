@@ -2,4 +2,4 @@
 
 changed_files="$(git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD)"
 
-echo "$changed_files" | grep --quiet "package.json" && echo "!! WARINING !! You must run npm install"
+echo "$changed_files" | grep --quiet "package.json" && echo "WARNING You probably must run npm install"
